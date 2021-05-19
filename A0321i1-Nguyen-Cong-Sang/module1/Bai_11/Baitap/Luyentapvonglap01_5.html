@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 1;
+    let b = 0;
+    let sum = 0;
+    let temp;
+    for (let i =1 ;i<=20;i++)
+    {
+        temp = a;
+        a +=b;
+        b = temp;
+        sum+=a;
+        document.write("20 so fibonacci dau tien " + i + " : " + a + "<br>");
+    }
+    document.write("Tong 20 so fibonacci dau tien: " + sum);
+</script>
+</body>
+</html>

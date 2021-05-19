@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function reventer() {
+        let n = parseInt(prompt("Nhap so luong phan tu mang a can nhap"));
+        let a = [];
+        for (let i = 0; i < n; i++) {
+            a[i] = parseInt(prompt("Nhap so nguyen phan tu thu " + i + 1));
+        }
+        document.write(a + "<br>");
+        a.reverse();
+        document.write(a);
+    }
+    reventer();
+</script>
+</body>
+</html>

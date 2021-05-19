@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let n;
+    let sum = 0;
+    n = parseInt(prompt("nhap so luong phan tu mang a"));
+    for (let i = 0; i < n; i++) {
+        a[i] = prompt("Nhap phan tu mang a " + i);
+    }
+    for (let j = 0; j < n; j++) {
+        if (a[j] >= 0 || a[j] < 0) {
+            sum++;
+        }
+    }
+    document.write(sum + "<br>");
+    document.write(a);
+</script>
+</body>
+</html>

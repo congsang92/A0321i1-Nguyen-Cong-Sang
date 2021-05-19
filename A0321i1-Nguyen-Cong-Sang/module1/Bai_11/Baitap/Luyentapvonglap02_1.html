@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhap so day Finonaci");
+    let b = 0;
+    let c = 1;
+    let temp;
+    let i = 1;
+    while (i<a) {
+        temp = b;
+        b += c;
+        c = temp;
+        i++;
+        document.write("fibonacci : " + temp + "<br>");
+    }
+</script>
+</body>
+</html>

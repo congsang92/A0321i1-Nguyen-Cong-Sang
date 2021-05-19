@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(doC) {
+        this.doC = doC;
+        this.chuyenDoiCsangF = function () {
+        return doC*1800+32;
+        }
+    }
+    let nhietDo = new Temperature(15);
+    alert(nhietDo.chuyenDoiCsangF());
+</script>
+</body>
+</html>

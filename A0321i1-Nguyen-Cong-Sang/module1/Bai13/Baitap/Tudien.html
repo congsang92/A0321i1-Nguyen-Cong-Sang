@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="tiengAnh">
+<button type="button" onclick="dichTu();">Dich</button>
+<script>
+    function dichTu() {
+        let english = [a, b,c,d ];
+        let viet = [1,2,3,4];
+        let text = [document.getElementById("tiengAnh").value];
+        for (let i=0; i<4;i++)
+        {
+            if (text == english[i])
+            {
+                document.write(viet[i]);
+                }
+            else {
+                alert("khong co tu dich");
+                }
+            }
+        document.write(viet[i]);
+            }
+
+</script>
+</body>
+</html>

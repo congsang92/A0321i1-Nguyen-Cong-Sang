@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = parseInt(prompt("nhâp số a"));
+    var b = parseInt(prompt("nhâp số b"));
+    var c = parseInt(prompt("nhâp số c"));
+    var x1;
+    var x2;
+    var denTa;
+    denTa = (b*b) - (4*a*c);
+    if (denTa < 0) {
+        document.write("Phuong trinh vo Nghiệm");
+    }
+     else if (denTa == 0) {
+             x1 = -b / (2 * a);
+             document.write("Phuong trinh co nghiem kep x1 = x2 =" + x1);
+         }
+            else {
+        var denTa2 = Math.sqrt(denta);
+        x1 = (-b + denTa2) / (2 * a);
+        x2 = (-b - denTa2) / (2 * a);
+        document.write("Phuong trinh co 2 nghiệm:" + "<br>")
+        document.write("x1 = " + x1 + "<br>");
+        document.write("x2 = " + x2);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputVatly;
+    let intputHoa;
+    let intputToan;
+    let Diemtrungbinh;
+    intputHoa = prompt("Nhâp điểm Hóa");
+    intputToan = prompt("Nhâp điểm Toán");
+    inputVatly = prompt("Nhâp điểm Vật lý");
+    let VatLy = parseInt(inputVatly);
+    let Hoa = parseInt(intputHoa);
+    let Toan = parseInt(intputToan);
+    Diemtrungbinh = (VatLy + Hoa + Toan)/3;
+    document.write('Điểm trung bình của bạn là :' + Diemtrungbinh);
+</script>
+</body>
+</html>

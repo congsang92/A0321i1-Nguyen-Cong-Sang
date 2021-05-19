@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="sodau">
+    <input type="text" id="sothuhai"><br>
+    <button name="1" onclick=" pheptoan() " >Addition(+)</button>
+    <div id="Addition(+)"></div>
+    <button name="1" onclick=" pheptoan() ">Subtraction(-)</button>
+    <div id="Subtraction(-)"></div>
+    <button name="1" onclick=" pheptoan() ">Multiplication(*)</button>
+    <div id="Multiplication(*)"></div>
+    <button name="1" onclick=" pheptoan() ">Division(/)</button>
+    <p id="Division(/)"></p>
+<script>
+    function pheptoan() {
+    let a = parseInt(document.getElementById("sodau").value);
+    let b = parseInt(document.getElementById("sothuhai").value);
+    let c = a + b;
+    let d = a - b;
+    let e = a*b;
+    let f = a/b;
+    document.getElementById("Addition(+)").innerHTML = "Ket qua = " + c;
+    document.getElementById("Subtraction(-)").innerHTML = "Ket qua = " + d;
+    document.getElementById("Multiplication(*)").innerHTML = "Ket qua = " + e;
+    document.getElementById("Division(/)").innerHTML = "Ket qua = " + f;
+    }
+</script>
+</body>
+</html>

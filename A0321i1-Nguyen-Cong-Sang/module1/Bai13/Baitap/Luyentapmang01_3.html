@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mangSoNguyen = [66, 3, 77, 100, 32, 11, 155];
+    let max = 0;
+    let trungBinh = 0;
+    let tong = 0;
+    let a;
+    max = mangSoNguyen[0];
+    for (let i = 1; i <= mangSoNguyen.length; i++)
+    {
+        if (max < mangSoNguyen[i])
+        {
+            max = mangSoNguyen[i];
+        }
+        // else
+        // {
+        //     max = mangSoNguyen[i];
+        // }
+        tong += mangSoNguyen[i-1];
+    }
+    // for (let j = 0; j <= (mangSoNguyen.length - 1); j++)
+    // {
+    //
+    // }
+    trungBinh = tong / (mangSoNguyen.length);
+    document.write("Gia tri lon nhat trong mang : " + max + "<br>");
+    document.write("Gia tri trung binh mang " + trungBinh);
+</script>
+</body>
+</html>

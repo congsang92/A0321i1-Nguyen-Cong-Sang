@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tuCanKiemTra = prompt("Nhaptucankiemtra");
+    let a = [];
+    a = tuCanKiemTra.split('');
+    let check = false;
+    let b = a.length;
+    for (let i = 0; i < (b / 2); i++) {
+        if (a[i] =! a[b - 1 - i]) {
+            check = false;
+        } else if (a[i] === a[b - 1 - i]) {
+            check = true;
+        }
+    }
+    console.log(check);
+    if (check == false) {
+        document.write("Khong phai chuoi palindrome");
+    } else if (check == true) {
+        document.write("Day la chuoi palindrome");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="chonSo();">CHON SO</button>
+<script>
+    function chonSo() {
+        let i = (Math.random() * 100 + 1);
+        for (let number = 1; number<=3; number++)
+        {
+            let a = prompt("Nhap so doan duoi 100");
+            if (a == i) {
+                document.write("chúc mừng");
+                break;
+            }
+            document.write("sai lan : " + number + "<br>") ;
+        }
+    }
+</script>
+
+</body>
+</html>
